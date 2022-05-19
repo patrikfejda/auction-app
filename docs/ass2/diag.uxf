@@ -1,0 +1,43 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>267</x><y>440</y><w>100</w><h>150</h></coordinates><panel_attributes>Buyer
+--
+-ico:char
+-dic:char
+-icdph:char
+--
++buyPhone()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>387</x><y>440</y><w>100</w><h>150</h></coordinates><panel_attributes>Seller
+--
+--
++sellPhone()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>321</x><y>200</y><w>100</w><h>180</h></coordinates><panel_attributes>/User/
+--
+-username:Char
+-password:Char
+-walletId:Wallet
+-phones
+--
++login()
++register()
++addPhone()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>381</x><y>370</y><w>70</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;70</additional_attributes></element><element><id>Relation</id><coordinates><x>301</x><y>370</y><w>60</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>667</x><y>200</y><w>100</w><h>180</h></coordinates><panel_attributes>Phone type
+--
+-phones
+-name:Char
+-skuName:Char
+-ram:Char
+-memory:Char
+-color:Char
+--
++create()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>411</x><y>190</y><w>100</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>497</x><y>200</y><w>100</w><h>150</h></coordinates><panel_attributes>Phone
+--
+-phoneType
+-imei:char
+-state:int&lt;0,100&gt;
+--
++create()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>591</x><y>190</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>491</x><y>10</y><w>100</w><h>120</h></coordinates><panel_attributes>Sale</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>531</x><y>120</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>231</x><y>10</y><w>100</w><h>130</h></coordinates><panel_attributes>Wallet</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>271</x><y>130</y><w>100</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>80;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>131</x><y>200</y><w>100</w><h>170</h></coordinates><panel_attributes>Bank Transfer
+--
+-currency:char
+-amount:float
+-iban:char
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>130</y><w>120</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;70</additional_attributes></element><element><id>UMLNote</id><coordinates><x>41</x><y>140</y><w>150</w><h>50</h></coordinates><panel_attributes>Amount &gt; 0 - adding
+Amount &lt; 0 - withdrawal
+bg=white</panel_attributes><additional_attributes></additional_attributes></element></diagram>

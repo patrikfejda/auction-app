@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.CustomerZoneController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="CUSTOMER ZONE"/>
+    <Label text="WALLET"/>
+    <Label fx:id="walletStatus"/>
+    <Button text="SHOW WALLET STATUS!" onAction="#showMyWallet"/>
+    <Button text="MAKE BANK TRANSFER!" onAction="#bankTransfer"/>
+
+    <Button text="Log out!!" onAction="#logOut"/>
+<!--    <Button text="Show my wallet!" onAction="#showMyWallet"/>-->
+    <Button text="Add a phone!" onAction="#addPhone"/>
+    <Button text="Sell a phone!" onAction="#sellPhone"/>
+    <Button text="Buy a phone!" onAction="#buyPhone"/>
+    <Button text="Show my phones!" onAction="#showMyPhones"/>
+    <Label fx:id="customerPhones" text=""/>
+
+
+
+
+</VBox>

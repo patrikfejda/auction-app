@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.AdminZoneController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="ADMIN ZONE"/>
+    <Button text="Log out!!" onAction="#logOut"/>
+    <Button text="Add a phone type!" onAction="#addPhoneType"/>
+    <Button text="Show all transfers!" onAction="#showAllTransfers"/>
+    <Label fx:id="allTransfers" text=""/>
+
+    <Button text="LOAD USERS" visible="true" fx:id="loadUsers" onAction="#loadUsers" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <ChoiceBox fx:id="users" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label fx:id="sumLabel" visible="false" text="SUM: (+ add / - withdraw)"/>
+    <TextField fx:id="sum" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Button text="ADD / WITHDRAW MONEY" visible="false" fx:id="addwithdrawmoney" onAction="#addwithdrawmoney" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label fx:id="addwithdrawinfo"/>
+
+
+
+
+</VBox>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.AddPhoneController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="mainLabel" text="ADD PHONE!"/>
+
+
+    <Label text="Type:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button text="LOAD PHONE TYPES" visible="true" fx:id="loadPhoneTypes" onAction="#loadPhoneTypes" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <ChoiceBox fx:id="type" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="IMEI:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <TextField fx:id="imei" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="State:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <TextField fx:id="state" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Button text="ADD PHONE" onAction="#addPhoneButtonClick"/>
+
+    <Button text="BACK" onAction="#back"/>
+
+
+
+
+</VBox>

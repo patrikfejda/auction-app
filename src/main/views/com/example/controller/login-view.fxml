@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="User Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+    <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label text="Telegram Chat ID:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+    <TextField fx:id="telegram_chat_id" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label fx:id="welcomeText"/>
+    <Button text="Login!" onAction="#onLoginButtonClick"/>
+    <Button text="Register!" onAction="#onRegisterButtonClick"/>
+    <Button text="SHOW MORE FIELDS" onAction="#onShowMoreFieldsClick"/>
+
+    <Label text="Buyer:"/><ToggleButton fx:id="is_buyer" />
+    <Label text="Admin:"/><ToggleButton fx:id="is_admin" />
+
+
+
+    <Label visible="false" fx:id="ico_label" text="ICO:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField visible="false" fx:id="ico" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label visible="false" fx:id="dic_label" text="DIC:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField visible="false" fx:id="dic" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label visible="false"  fx:id="icdph_label" text="IC DPH:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField visible="false" fx:id="icdph" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+
+</VBox>
